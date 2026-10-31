@@ -11,6 +11,7 @@ use minidump_unwind::{
 };
 use pyo3::exceptions::PyValueError;
 use pyo3::prelude::*;
+use pyo3::pybacked::PyBackedBytes;
 use pyo3::types::PyBytes;
 use symbolic_cfi::CfiCache;
 use symbolic_common::DebugId;
@@ -45,15 +46,12 @@ fn debug_file_kind(py: Python<'_>, data: &[u8]) -> PyResult<String> {
 
 #[pyfunction]
 fn generate_cfi<'py>(py: Python<'py>, data: &[u8]) -> PyResult<Bound<'py, PyBytes>> {
-    let bytes = py.detach(|| {
+    let cache = py.detach(|| {
         with_object(data, |object| {
-            Ok(CfiCache::from_object(object)
-                .map_err(invalid)?
-                .as_slice()
-                .to_vec())
+            CfiCache::from_object(object).map_err(invalid)
         })
     })?;
-    Ok(PyBytes::new(py, &bytes))
+    Ok(PyBytes::new(py, cache.as_slice()))
 }
 
 #[pyclass(get_all, frozen, module = "symalot")]
@@ -187,7 +185,7 @@ impl SymbolProvider for CfiSymbols {
 fn process_minidump(
     py: Python<'_>,
     data: &[u8],
-    cfi: Option<HashMap<String, Vec<u8>>>,
+    cfi: Option<HashMap<String, PyBackedBytes>>,
 ) -> PyResult<ProcessState> {
     py.detach(|| {
         let mut symbols = HashMap::new();
@@ -198,7 +196,7 @@ fn process_minidump(
             }
             symbols.insert(
                 id,
-                SymbolFile::parse(bytes.as_slice(), |_| {}).map_err(invalid)?,
+                SymbolFile::parse(bytes.as_ref(), |_| {}).map_err(invalid)?,
             );
         }
         let dump = Minidump::read(data).map_err(invalid)?;

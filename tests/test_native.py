@@ -43,11 +43,12 @@ def test_windows_dump():
     assert frames[1].trust == "frame_pointer"
 
 
-def test_generated_cfi_recovers_the_caller():
+@pytest.mark.parametrize("cfi_type", [bytes, bytearray])
+def test_generated_cfi_recovers_the_caller(cfi_type):
     data = (FIXTURES / "linux_null_read_av.dmp").read_bytes()
     without_cfi = symalot.process_minidump(data)
     cfi = symalot.generate_cfi(SYMBOLS)
-    with_cfi = symalot.process_minidump(data, {DEBUG_ID: cfi})
+    with_cfi = symalot.process_minidump(data, {DEBUG_ID: cfi_type(cfi)})
     assert without_cfi.threads[0].frames[1].trust == "scan"
     frames = with_cfi.threads[0].frames
     assert frames[0].instruction == 0x402170
