@@ -248,3 +248,21 @@ def test_core_upgrade_counts_when_cargo_keeps_the_old_version_too(repository):
     result = run_release(repository, previous)
     assert result.returncode == 0, result.stderr
     assert git(repository, "tag") == "v2.0.0"
+
+
+
+def test_release_includes_core_update_before_the_latest_ci_parent(repository):
+    write_versions(repository, "1.2.3")
+    git(repository, "commit", "--quiet", "-am", "Start at 1.2.3")
+    git(repository, "tag", "v1.2.3")
+    path = repository / "Cargo.lock"
+    path.write_text(path.read_text().replace('"13.9.0"', '"14.0.0"'))
+    manifest = repository / "Cargo.toml"
+    manifest.write_text(manifest.read_text().replace('"=13.9.0"', '"=14.0.0"'))
+    git(repository, "commit", "--quiet", "-am", "Upgrade symbolic before the next CI parent")
+    previous = git(repository, "rev-parse", "HEAD")
+    git(repository, "commit", "--quiet", "--allow-empty", "-m", "Another change lands while CI runs")
+    result = run_release(repository, previous)
+    assert result.returncode == 0, result.stderr
+    assert 'version = "2.0.0"' in manifest.read_text()
+    assert git(repository, "tag", "--list", "v2.0.0") == "v2.0.0"

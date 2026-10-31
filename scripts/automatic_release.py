@@ -116,12 +116,27 @@ def write_project_version(version: str) -> None:
         path.write_text(text)
 
 
+def release_base(previous: str, version: str) -> str:
+    tag = subprocess.run(
+        ["git", "rev-parse", "--verify", f"refs/tags/v{version}^{{commit}}"],
+        cwd=ROOT, capture_output=True, text=True, check=False,
+    )
+    if tag.returncode == 128:
+        return previous
+    if tag.returncode != 0:
+        raise SystemExit("Could not resolve the previous release tag")
+    commit = tag.stdout.strip()
+    subprocess.run(["git", "merge-base", "--is-ancestor", commit, "HEAD"], cwd=ROOT, check=True)
+    return commit
+
+
 def main() -> int:
     if len(sys.argv) != 2:
         raise SystemExit("usage: automatic_release.py <previous-commit>")
     previous = sys.argv[1]
     old_version = project_version(previous)
     version = project_version()
+    previous = release_base(previous, old_version)
     automatic = version == old_version
     expected = dependency_release_version(previous, old_version)
     if automatic:
