@@ -12,7 +12,7 @@ use minidump_unwind::{
 use pyo3::exceptions::PyValueError;
 use pyo3::prelude::*;
 use pyo3::pybacked::PyBackedBytes;
-use pyo3::types::PyBytes;
+use pyo3::types::{PyBytes, PyTuple};
 use symbolic_cfi::CfiCache;
 use symbolic_common::DebugId;
 use symbolic_debuginfo::{Archive, Object};
@@ -55,7 +55,6 @@ fn generate_cfi<'py>(py: Python<'py>, data: &[u8]) -> PyResult<Bound<'py, PyByte
 }
 
 #[pyclass(get_all, frozen, module = "symalot")]
-#[derive(Clone)]
 struct SourceLocation {
     function_name: String,
     filename: Option<String>,
@@ -103,21 +102,18 @@ fn normalize_debug_id(value: &str) -> PyResult<String> {
 }
 
 #[pyclass(get_all, frozen, module = "symalot")]
-#[derive(Clone)]
 struct Frame {
     instruction: u64,
     trust: String,
 }
 
 #[pyclass(get_all, frozen, module = "symalot")]
-#[derive(Clone)]
 struct Thread {
     thread_id: u32,
-    frames: Vec<Frame>,
+    frames: Py<PyTuple>,
 }
 
 #[pyclass(get_all, frozen, module = "symalot")]
-#[derive(Clone)]
 struct Module {
     addr: u64,
     size: u64,
@@ -128,7 +124,6 @@ struct Module {
 }
 
 #[pyclass(get_all, frozen, module = "symalot")]
-#[derive(Clone)]
 struct SystemInfo {
     os_name: String,
     os_version: Option<String>,
@@ -142,9 +137,9 @@ struct ProcessState {
     crash_reason: Option<String>,
     assertion: Option<String>,
     requesting_thread: Option<usize>,
-    system_info: SystemInfo,
-    modules: Vec<Module>,
-    threads: Vec<Thread>,
+    system_info: Py<SystemInfo>,
+    modules: Py<PyTuple>,
+    threads: Py<PyTuple>,
 }
 
 struct CfiSymbols(HashMap<DebugId, SymbolFile>);
@@ -187,7 +182,7 @@ fn process_minidump(
     data: &[u8],
     cfi: Option<HashMap<String, PyBackedBytes>>,
 ) -> PyResult<ProcessState> {
-    py.detach(|| {
+    let state = py.detach(|| {
         let mut symbols = HashMap::new();
         for (id, bytes) in cfi.unwrap_or_default() {
             let id = id.parse::<DebugId>().map_err(invalid)?;
@@ -203,58 +198,66 @@ fn process_minidump(
         let runtime = tokio::runtime::Builder::new_current_thread()
             .build()
             .map_err(invalid)?;
-        let state = runtime
+        runtime
             .block_on(minidump_processor::process_minidump(
                 &dump,
                 &CfiSymbols(symbols),
             ))
-            .map_err(invalid)?;
-        Ok(ProcessState {
-            timestamp: state
-                .time
-                .duration_since(UNIX_EPOCH)
-                .map_err(invalid)?
-                .as_secs(),
-            crashed: state.crashed(),
-            crash_reason: state
-                .exception_info
-                .as_ref()
-                .map(|info| info.reason.to_string()),
-            assertion: state.assertion,
-            requesting_thread: state.requesting_thread,
-            system_info: SystemInfo {
+            .map_err(invalid)
+    })?;
+    let crashed = state.crashed();
+    let threads = state
+        .threads
+        .into_iter()
+        .map(|thread| {
+            let frames = PyTuple::new(
+                py,
+                thread.frames.into_iter().map(|frame| Frame {
+                    instruction: frame.instruction,
+                    trust: frame.trust.as_str().to_owned(),
+                }),
+            )?;
+            Ok(Thread {
+                thread_id: thread.thread_id,
+                frames: frames.unbind(),
+            })
+        })
+        .collect::<PyResult<Vec<_>>>()?;
+    let modules: Vec<_> = state
+        .modules
+        .iter()
+        .map(|module| Module {
+            addr: module.base_address(),
+            size: module.size(),
+            debug_id: module.debug_identifier().map(|id| id.to_string()),
+            code_id: module.code_identifier().map(|id| id.to_string()),
+            code_file: module.code_file().into_owned(),
+            debug_file: module.debug_file().map(|file| file.into_owned()),
+        })
+        .collect();
+    Ok(ProcessState {
+        timestamp: state
+            .time
+            .duration_since(UNIX_EPOCH)
+            .map_err(invalid)?
+            .as_secs(),
+        crashed,
+        crash_reason: state
+            .exception_info
+            .as_ref()
+            .map(|info| info.reason.to_string()),
+        assertion: state.assertion,
+        requesting_thread: state.requesting_thread,
+        system_info: Py::new(
+            py,
+            SystemInfo {
                 os_name: state.system_info.os.long_name().into_owned(),
                 os_version: state.system_info.os_version,
                 cpu: state.system_info.cpu.to_string(),
             },
-            modules: state
-                .modules
-                .iter()
-                .map(|module| Module {
-                    addr: module.base_address(),
-                    size: module.size(),
-                    debug_id: module.debug_identifier().map(|id| id.to_string()),
-                    code_id: module.code_identifier().map(|id| id.to_string()),
-                    code_file: module.code_file().into_owned(),
-                    debug_file: module.debug_file().map(|file| file.into_owned()),
-                })
-                .collect(),
-            threads: state
-                .threads
-                .into_iter()
-                .map(|thread| Thread {
-                    thread_id: thread.thread_id,
-                    frames: thread
-                        .frames
-                        .into_iter()
-                        .map(|frame| Frame {
-                            instruction: frame.instruction,
-                            trust: frame.trust.as_str().to_owned(),
-                        })
-                        .collect(),
-                })
-                .collect(),
-        })
+        )?,
+        modules: PyTuple::new(py, modules)?.unbind(),
+        threads: PyTuple::new(py, threads)?.unbind(),
     })
 }
 

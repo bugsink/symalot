@@ -38,6 +38,8 @@ by CI. Native builds cover Linux and macOS on x86_64 and ARM64.
 Results expose attributes, including `state.threads[0].frames[0].instruction`.
 `requesting_thread` is an index or `None`. Missing strings may be `None`.
 Child results remain usable after discarding the input and parent results.
+Modules, threads and frames are immutable tuples of objects created once;
+reading an attribute again does not clone the result tree.
 Source bundles are rejected before parsing in all debug-file operations.
 
 Versions are independent of upstream symbolic. The initial dependencies are

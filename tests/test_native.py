@@ -100,3 +100,25 @@ def test_source_bundles_are_rejected_before_manifest_parsing(parse):
 def test_invalid_input_is_a_python_error(parse):
     with pytest.raises(ValueError):
         parse(b"not a binary file")
+
+
+
+def test_child_results_are_created_once_and_collections_are_immutable():
+    state = symalot.process_minidump((FIXTURES / "linux_null_read_av.dmp").read_bytes())
+    threads, modules, info = state.threads, state.modules, state.system_info
+    assert state.threads is threads
+    assert state.modules is modules
+    assert state.system_info is info
+    assert state.threads[0] is threads[0]
+    assert state.modules[0] is modules[0]
+    frames = threads[0].frames
+    assert threads[0].frames is frames
+    assert threads[0].frames[0] is frames[0]
+    with pytest.raises(TypeError):
+        threads[0] = threads[0]
+    with pytest.raises(TypeError):
+        frames[0] = frames[0]
+    del state, threads, modules
+    gc.collect()
+    assert info.cpu == "amd64"
+    assert frames[0].instruction == 0x402170
