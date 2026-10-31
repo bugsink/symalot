@@ -5,7 +5,7 @@ use std::path::PathBuf;
 use std::time::UNIX_EPOCH;
 
 use async_trait::async_trait;
-use minidump::{Minidump, Module as MinidumpModule};
+use minidump::{Minidump, MinidumpModuleList, Module as MinidumpModule};
 use minidump_unwind::{
     FileError, FileKind, FillSymbolError, FrameSymbolizer, FrameWalker, SymbolFile, SymbolProvider,
 };
@@ -142,6 +142,31 @@ struct ProcessState {
     threads: Py<PyTuple>,
 }
 
+fn module_result(module: &impl MinidumpModule) -> Module {
+    Module {
+        addr: module.base_address(),
+        size: module.size(),
+        debug_id: module.debug_identifier().map(|id| id.to_string()),
+        code_id: module.code_identifier().map(|id| id.to_string()),
+        code_file: module.code_file().into_owned(),
+        debug_file: module.debug_file().map(|file| file.into_owned()),
+    }
+}
+
+/// Read loaded modules without unwinding any threads.
+#[pyfunction]
+fn minidump_modules<'py>(py: Python<'py>, data: &[u8]) -> PyResult<Bound<'py, PyTuple>> {
+    let modules = py.detach(|| {
+        let dump = Minidump::read(data).map_err(invalid)?;
+        match dump.get_stream::<MinidumpModuleList>() {
+            Ok(modules) => Ok(modules.iter().map(module_result).collect::<Vec<_>>()),
+            Err(minidump::Error::StreamNotFound) => Ok(Vec::new()),
+            Err(error) => Err(invalid(error)),
+        }
+    })?;
+    PyTuple::new(py, modules)
+}
+
 struct CfiSymbols(HashMap<DebugId, SymbolFile>);
 
 #[async_trait]
@@ -223,18 +248,7 @@ fn process_minidump(
             })
         })
         .collect::<PyResult<Vec<_>>>()?;
-    let modules: Vec<_> = state
-        .modules
-        .iter()
-        .map(|module| Module {
-            addr: module.base_address(),
-            size: module.size(),
-            debug_id: module.debug_identifier().map(|id| id.to_string()),
-            code_id: module.code_identifier().map(|id| id.to_string()),
-            code_file: module.code_file().into_owned(),
-            debug_file: module.debug_file().map(|file| file.into_owned()),
-        })
-        .collect();
+    let modules: Vec<_> = state.modules.iter().map(module_result).collect();
     Ok(ProcessState {
         timestamp: state
             .time
@@ -268,6 +282,7 @@ fn symalot(module: &Bound<'_, PyModule>) -> PyResult<()> {
     module.add_function(wrap_pyfunction!(lookup_addresses, module)?)?;
     module.add_function(wrap_pyfunction!(normalize_debug_id, module)?)?;
     module.add_function(wrap_pyfunction!(process_minidump, module)?)?;
+    module.add_function(wrap_pyfunction!(minidump_modules, module)?)?;
     module.add_class::<SourceLocation>()?;
     module.add_class::<Frame>()?;
     module.add_class::<Thread>()?;

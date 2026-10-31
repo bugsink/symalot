@@ -30,6 +30,8 @@ by CI. Native builds cover Linux and macOS on x86_64 and ARM64.
   locations per module-relative address, preserving input order and inline frames.
   Locations have `function_name`, `filename` (full path), and `line` attributes.
 * `normalize_debug_id(value)` returns a canonical debug ID, preserving PDB age.
+* `minidump_modules(data)` returns loaded modules without unwinding threads;
+  use it to find the CFI files needed before processing a dump.
 * `process_minidump(data, cfi=None)` returns crash metadata, system information,
   loaded modules, and threads with instruction addresses and frame trust.
   `cfi` maps debug IDs to ASCII unwind bytes. Processing uses only these inputs,

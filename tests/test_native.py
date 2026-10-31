@@ -96,7 +96,7 @@ def test_source_bundles_are_rejected_before_manifest_parsing(parse):
         parse(b"SYSB\x02\x00\x00\x00")
 
 
-@pytest.mark.parametrize("parse", [symalot.process_minidump, symalot.debug_file_kind, symalot.generate_cfi])
+@pytest.mark.parametrize("parse", [symalot.process_minidump, symalot.minidump_modules, symalot.debug_file_kind, symalot.generate_cfi])
 def test_invalid_input_is_a_python_error(parse):
     with pytest.raises(ValueError):
         parse(b"not a binary file")
@@ -122,3 +122,25 @@ def test_child_results_are_created_once_and_collections_are_immutable():
     gc.collect()
     assert info.cpu == "amd64"
     assert frames[0].instruction == 0x402170
+
+
+
+def test_loaded_modules_can_be_read_without_processing_threads():
+    data = (FIXTURES / "linux_null_read_av.dmp").read_bytes()
+    modules = symalot.minidump_modules(data)
+    del data
+    gc.collect()
+    assert len(modules) == 8
+    main = modules[0]
+    assert main.addr == 0x400000
+    assert main.size == 81920
+    assert main.debug_id == "7b7d1968-ff0d-47ae-4366-e9c3a7e1b675"
+    assert main.code_file == "/home/mattdr/crashing-programs/null_read_av"
+
+
+
+def test_dump_without_streams_has_no_loaded_modules():
+    data = (FIXTURES / "linux_null_read_av.dmp").read_bytes()
+    # The minidump header stores the stream count at byte 8.
+    data = data[:8] + bytes(4) + data[12:]
+    assert symalot.minidump_modules(data) == ()
