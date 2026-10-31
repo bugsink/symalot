@@ -1,0 +1,45 @@
+version: 2
+
+updates:
+  - package-ecosystem: cargo
+    directory: /
+    schedule:
+      interval: daily
+    cooldown:
+      default-days: 3
+      exclude:
+        - "symbolic-*"
+        - "minidump*"
+    groups:
+      symbolic:
+        patterns:
+          - "symbolic-*"
+      rust-minidump:
+        patterns:
+          - "minidump*"
+      other-rust:
+        patterns:
+          - "*"
+        exclude-patterns:
+          - "symbolic-*"
+          - "minidump*"
+
+  - package-ecosystem: pip
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      python-tooling:
+        patterns:
+          - "*"
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    ignore:
+      - dependency-name: dtolnay/rust-toolchain
+    groups:
+      all-actions:
+        patterns:
+          - "*"

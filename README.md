@@ -48,11 +48,18 @@ use an editable install for the Bugsink integration branch.
 
 Release workflows, scripts, and release-note tests are adapted from
 [bugsink/brotli-rs at 1ffbb62de6bcc3722ebd55423a518a90c8a9be92](https://github.com/bugsink/brotli-rs/tree/1ffbb62de6bcc3722ebd55423a518a90c8a9be92):
+`.github/dependabot.yml`, `.github/workflows/dependabot-automerge.yml`,
 `.github/workflows/release.yml`, `.github/workflows/automatic-release.yml`,
 `scripts/automatic_release.py`, `scripts/upstream_release_notes.py`, and
 `tests/project/test_upstream_release_notes.py`. The automatic-release tests
 were written for symalot. Unlike brotli-rs, symalot requires an explicit package
 version bump; dependency updates do not choose a version or create a commit.
+
+Dependabot checks Rust dependencies daily, grouping symbolic and rust-minidump
+separately from supporting crates. Supporting crates have a three-day cooldown;
+Python tooling and GitHub Actions are checked weekly. Green Dependabot PRs are
+squash-merged only after verifying that CI tested the current PR commit, then CI
+is dispatched on main because merges using GITHUB_TOKEN do not trigger push CI.
 
 The manual `Release` workflow can
 build a commit or branch with `publish=false` (the default), test the four wheels
