@@ -88,8 +88,12 @@ def dependency_release_version(previous: str, current: str) -> str | None:
             continue
         if name.startswith("symbolic-") or name == "minidump" or name.startswith("minidump-"):
             removed, added = old[name] - new[name], new[name] - old[name]
-            if removed and added:
-                bump = max(bump, upstream_bump(max(removed, key=Version), max(added, key=Version)))
+            if added:
+                before = max(removed or old[name], key=Version)
+                after = max(added, key=Version)
+                # Cargo can retain an older copy for another dependency.
+                if removed or Version(after) > Version(before):
+                    bump = max(bump, upstream_bump(before, after))
     version = Version(current)
     if version.is_prerelease or len(version.release) != 3 or str(version) != current:
         raise SystemExit("Symalot automatic releases require an X.Y.Z version")

@@ -235,3 +235,16 @@ def test_concurrent_main_update_is_not_overwritten_or_released(repository):
     assert git(repository, "ls-remote", "origin", "refs/heads/main").split()[0] == remote_commit
     assert git(repository, "tag") == ""
     assert not (repository / ".git/gh-calls").exists()
+
+
+
+def test_core_upgrade_counts_when_cargo_keeps_the_old_version_too(repository):
+    write_versions(repository, "1.2.3")
+    git(repository, "commit", "--quiet", "-am", "Start at 1.2.3")
+    previous = git(repository, "rev-parse", "HEAD")
+    path = repository / "Cargo.lock"
+    path.write_text(path.read_text() + '[[package]]\nname = "symbolic-common"\nversion = "14.0.0"\n')
+    git(repository, "commit", "--quiet", "-am", "Upgrade symbolic, retaining an older copy")
+    result = run_release(repository, previous)
+    assert result.returncode == 0, result.stderr
+    assert git(repository, "tag") == "v2.0.0"
