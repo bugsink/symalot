@@ -52,8 +52,8 @@ Release workflows, scripts, and release-note tests are adapted from
 `.github/workflows/release.yml`, `.github/workflows/automatic-release.yml`,
 `scripts/automatic_release.py`, `scripts/upstream_release_notes.py`, and
 `tests/project/test_upstream_release_notes.py`. The automatic-release tests
-were written for symalot. Unlike brotli-rs, symalot requires an explicit package
-version bump; dependency updates do not choose a version or create a commit.
+were written for symalot. Symalot uses independent release numbers rather than
+matching a single upstream's version.
 
 Dependabot checks Rust dependencies daily, grouping symbolic and rust-minidump
 separately from supporting crates. Supporting crates have a three-day cooldown;
@@ -71,14 +71,29 @@ GitHub release or a manual run with `publish=true` uploads the tested artifacts
 through PyPI Trusted Publishing, using the GitHub environment `pypi`.
 
 Automatic releases are disabled unless the repository variable
-`AUTOMATIC_RELEASES` is set to `true`. Once enabled, green CI on a commit that
-explicitly increases both package versions triggers tagging and publishing.
-Dependency updates alone do not select a package version. The release script
-does not edit versions or create commits. Upstream notes use the published crate's
-source commit where recorded. Symbolic omits that metadata, so its attribution
-explicitly identifies the upstream release tag instead.
+`AUTOMATIC_RELEASES` is set to `true`. Once enabled, green CI on main selects
+one version bump for a Rust dependency update, starting from symalot 1.0.0:
 
-The first release, versioning policy, and PyPI configuration still need review.
+* Symbolic and rust-minidump major/minor/patch updates produce the corresponding
+  symalot bump. For upstream 0.x, a minor update produces a symalot major bump.
+* The largest bump wins across all updated crates; a group produces one release.
+* Supporting Rust dependency updates, including transitive updates, produce a
+  patch release. Tooling-only changes produce no release.
+* Our own changes use an explicit version bump in Cargo.toml and pyproject.toml.
+  An explicit bump accompanying dependency updates must meet their minimum bump.
+
+As in brotli-rs, the script prepares a version commit and updates Cargo.lock with
+cargo check, then pushes and tags it. Dependency resolution must stay unchanged.
+The release workflow builds and tests the final versioned wheels and sdist before
+publishing. Automatic merges dispatch main CI explicitly, and that CI can trigger
+the release check too. Prerelease upstream versions and core downgrades require
+manual handling.
+
+Upstream notes list changed crate versions and use the published crate's source
+commit where recorded. Symbolic omits that metadata, so its attribution explicitly
+identifies the upstream release tag instead.
+
+The first release and PyPI configuration still need review.
 
 ## License and upstream material
 
