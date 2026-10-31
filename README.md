@@ -1,6 +1,6 @@
 # Symalot
 
-<img src="https://raw.githubusercontent.com/bugsink/symalot/main/symalot-logo.png" width="480" alt="Symalot logo">
+![Symalot logo](https://raw.githubusercontent.com/bugsink/symalot/main/symalot-logo.png)
 
 Small Python bindings for the Rust libraries used to process native crash reports
 and debug files. The initial interface serves Bugsink's minidump handling.
