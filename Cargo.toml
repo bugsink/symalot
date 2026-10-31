@@ -1,0 +1,23 @@
+[package]
+name = "symalot"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+publish = false
+
+[lib]
+name = "symalot"
+crate-type = ["cdylib"]
+
+[dependencies]
+async-trait = "0.1"
+minidump = "=0.27.0"
+minidump-processor = { version = "=0.27.0", default-features = false }
+minidump-unwind = { version = "=0.27.0", default-features = false }
+pyo3 = { version = "0.30.1", features = ["abi3-py311", "extension-module"] }
+symbolic-cfi = "=13.9.0"
+symbolic-common = "=13.9.0"
+symbolic-debuginfo = "=13.9.0"
+symbolic-demangle = { version = "=13.9.0", default-features = false, features = ["cpp", "msvc", "rust"] }
+symbolic-symcache = "=13.9.0"
+tokio = { version = "1", features = ["rt"] }

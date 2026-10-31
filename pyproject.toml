@@ -1,0 +1,29 @@
+[build-system]
+requires = ["maturin>=1.9,<2"]
+build-backend = "maturin"
+
+[project]
+name = "symalot"
+version = "0.1.0"
+description = "Small Python bindings for native crash processing and symbolication"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+
+[project.urls]
+Source = "https://github.com/bugsink/symalot"
+Issues = "https://github.com/bugsink/symalot/issues"
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[tool.maturin]
+module-name = "symalot"
+include = [
+    { path = "tests/**/*", format = "sdist" },
+    { path = "scripts/**/*", format = "sdist" },
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

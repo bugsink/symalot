@@ -1,0 +1,53 @@
+name: Automatic Release Check
+
+on:
+  workflow_run:
+    workflows: [CI]
+    types: [completed]
+  workflow_dispatch:
+    inputs:
+      target_commit:
+        description: Exact tested commit to tag and release
+        required: true
+        type: string
+      previous_commit:
+        description: Commit to compare with the target commit
+        required: true
+        type: string
+
+permissions:
+  actions: write
+  contents: write
+
+concurrency:
+  group: automatic-release
+  cancel-in-progress: false
+
+jobs:
+  check:
+    if: >-
+      vars.AUTOMATIC_RELEASES == 'true' &&
+      (github.event_name == 'workflow_dispatch' ||
+      (github.event.workflow_run.conclusion == 'success' &&
+      github.event.workflow_run.event == 'push' &&
+      github.event.workflow_run.head_branch == 'main'))
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+          ref: ${{ inputs.target_commit || github.event.workflow_run.head_sha || github.sha }}
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - run: python -m pip install packaging
+      - name: Prepare release
+        env:
+          PREVIOUS_COMMIT: ${{ inputs.previous_commit }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          previous_commit="$PREVIOUS_COMMIT"
+          if [ -z "$previous_commit" ]; then
+            previous_commit="$(git rev-parse HEAD^)"
+          fi
+          python scripts/automatic_release.py "$previous_commit"
