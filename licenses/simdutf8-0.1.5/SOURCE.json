@@ -1,0 +1,21 @@
+{
+  "authors": [
+    "Hans Kratz <hans@appfour.com>"
+  ],
+  "crate": "simdutf8",
+  "crate_archive": "https://crates.io/api/v1/crates/simdutf8/0.1.5/download",
+  "files_copied_from_crate": [
+    "LICENSE-Apache",
+    "LICENSE-MIT"
+  ],
+  "license_expression": "MIT OR Apache-2.0",
+  "repository": "https://github.com/rusticstuff/simdutf8",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "87ee8d9d20b849eae1974a82b248ee6fe7491bcc"
+    },
+    "path_in_vcs": ""
+  },
+  "version": "0.1.5"
+}

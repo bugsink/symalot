@@ -1,0 +1,21 @@
+{
+  "authors": [
+    "The Rust Project Developers"
+  ],
+  "crate": "bitflags",
+  "crate_archive": "https://crates.io/api/v1/crates/bitflags/2.13.2/download",
+  "files_copied_from_crate": [
+    "LICENSE-APACHE",
+    "LICENSE-MIT"
+  ],
+  "license_expression": "MIT OR Apache-2.0",
+  "repository": "https://github.com/bitflags/bitflags",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "80ce9b545acb0bd42150695fc351889cac1d8eb4"
+    },
+    "path_in_vcs": ""
+  },
+  "version": "2.13.2"
+}

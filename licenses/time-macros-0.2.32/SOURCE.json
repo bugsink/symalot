@@ -1,0 +1,22 @@
+{
+  "authors": [
+    "Jacob Pratt <open-source@jhpratt.dev>",
+    "Time contributors"
+  ],
+  "crate": "time-macros",
+  "crate_archive": "https://crates.io/api/v1/crates/time-macros/0.2.32/download",
+  "files_copied_from_crate": [
+    "LICENSE-Apache",
+    "LICENSE-MIT"
+  ],
+  "license_expression": "MIT OR Apache-2.0",
+  "repository": "https://github.com/time-rs/time",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "d1c55a454051c83e8fd2ad8431cf37b90dd6ea31"
+    },
+    "path_in_vcs": "time-macros"
+  },
+  "version": "0.2.32"
+}

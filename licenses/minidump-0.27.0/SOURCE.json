@@ -1,0 +1,20 @@
+{
+  "authors": [
+    "Ted Mielczarek <ted@mielczarek.org>"
+  ],
+  "crate": "minidump",
+  "crate_archive": "https://crates.io/api/v1/crates/minidump/0.27.0/download",
+  "files_copied_from_crate": [
+    "LICENSE"
+  ],
+  "license_expression": "MIT",
+  "repository": "https://github.com/rust-minidump/rust-minidump",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "4adf5555b2ab844f23c52982fc202357ff882695"
+    },
+    "path_in_vcs": "minidump"
+  },
+  "version": "0.27.0"
+}

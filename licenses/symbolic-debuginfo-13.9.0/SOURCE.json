@@ -1,0 +1,14 @@
+{
+  "authors": [
+    "Armin Ronacher <armin.ronacher@active-4.com>",
+    "Jan Michael Auer <mail@jauer.org>"
+  ],
+  "crate": "symbolic-debuginfo",
+  "crate_archive": "https://crates.io/api/v1/crates/symbolic-debuginfo/13.9.0/download",
+  "files_copied_from_crate": [],
+  "license_expression": "MIT",
+  "license_from_upstream_release": "https://raw.githubusercontent.com/getsentry/symbolic/13.9.0/LICENSE",
+  "repository": "https://github.com/getsentry/symbolic",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "version": "13.9.0"
+}

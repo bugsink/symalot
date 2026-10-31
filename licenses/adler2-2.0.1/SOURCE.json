@@ -1,0 +1,23 @@
+{
+  "authors": [
+    "Jonas Schievink <jonasschievink@gmail.com>",
+    "oyvindln <oyvindln@users.noreply.github.com>"
+  ],
+  "crate": "adler2",
+  "crate_archive": "https://crates.io/api/v1/crates/adler2/2.0.1/download",
+  "files_copied_from_crate": [
+    "LICENSE-0BSD",
+    "LICENSE-APACHE",
+    "LICENSE-MIT"
+  ],
+  "license_expression": "0BSD OR MIT OR Apache-2.0",
+  "repository": "https://github.com/oyvindln/adler2",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "89a031a0f42eeff31c70dc598b398cbf31f1680f"
+    },
+    "path_in_vcs": ""
+  },
+  "version": "2.0.1"
+}

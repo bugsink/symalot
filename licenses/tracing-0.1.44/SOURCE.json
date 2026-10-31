@@ -1,0 +1,21 @@
+{
+  "authors": [
+    "Eliza Weisman <eliza@buoyant.io>",
+    "Tokio Contributors <team@tokio.rs>"
+  ],
+  "crate": "tracing",
+  "crate_archive": "https://crates.io/api/v1/crates/tracing/0.1.44/download",
+  "files_copied_from_crate": [
+    "LICENSE"
+  ],
+  "license_expression": "MIT",
+  "repository": "https://github.com/tokio-rs/tracing",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "2d55f6faf9be83e7e4634129fb96813241aac2b8"
+    },
+    "path_in_vcs": "tracing"
+  },
+  "version": "0.1.44"
+}

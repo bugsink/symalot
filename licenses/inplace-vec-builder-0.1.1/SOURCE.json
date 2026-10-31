@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "R\u00fcdiger Klaehn <rklaehn@protonmail.com>"
+  ],
+  "crate": "inplace-vec-builder",
+  "crate_archive": "https://crates.io/api/v1/crates/inplace-vec-builder/0.1.1/download",
+  "files_copied_from_crate": [],
+  "license_expression": "MIT OR Apache-2.0",
+  "license_text_from": "pyo3/LICENSE-APACHE (standard Apache-2.0 text)",
+  "repository": "https://github.com/rklaehn/inplace-vec-builder",
+  "selected_license": "Apache-2.0",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "af53b724809d406806322c4c386c8a99722fe816"
+    }
+  },
+  "version": "0.1.1"
+}

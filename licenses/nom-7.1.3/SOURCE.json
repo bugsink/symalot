@@ -1,0 +1,20 @@
+{
+  "authors": [
+    "contact@geoffroycouprie.com"
+  ],
+  "crate": "nom",
+  "crate_archive": "https://crates.io/api/v1/crates/nom/7.1.3/download",
+  "files_copied_from_crate": [
+    "LICENSE"
+  ],
+  "license_expression": "MIT",
+  "repository": "https://github.com/Geal/nom",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "869f8972a4383b13cf89574fda28cb7dbfd56517"
+    },
+    "path_in_vcs": ""
+  },
+  "version": "7.1.3"
+}

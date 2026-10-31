@@ -1,0 +1,19 @@
+{
+  "authors": [],
+  "crate": "portable-atomic",
+  "crate_archive": "https://crates.io/api/v1/crates/portable-atomic/1.15.0/download",
+  "files_copied_from_crate": [
+    "LICENSE-APACHE",
+    "LICENSE-MIT"
+  ],
+  "license_expression": "Apache-2.0 OR MIT",
+  "repository": "https://github.com/taiki-e/portable-atomic",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "e4595528211f1d53b7f4d93e528ef84b491fc871"
+    },
+    "path_in_vcs": ""
+  },
+  "version": "1.15.0"
+}

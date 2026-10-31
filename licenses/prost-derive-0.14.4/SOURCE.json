@@ -1,0 +1,23 @@
+{
+  "authors": [
+    "Dan Burkert <dan@danburkert.com>",
+    "Lucio Franco <luciofranco14@gmail.com>",
+    "Casper Meijn <casper@meijn.net>",
+    "Tokio Contributors <team@tokio.rs>"
+  ],
+  "crate": "prost-derive",
+  "crate_archive": "https://crates.io/api/v1/crates/prost-derive/0.14.4/download",
+  "files_copied_from_crate": [
+    "LICENSE"
+  ],
+  "license_expression": "Apache-2.0",
+  "repository": "https://github.com/tokio-rs/prost",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "13646cde7eab75c81b3047767aa0a86e7dbecf12"
+    },
+    "path_in_vcs": "prost-derive"
+  },
+  "version": "0.14.4"
+}

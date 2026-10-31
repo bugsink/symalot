@@ -1,0 +1,15 @@
+{
+  "authors": [
+    "jzr"
+  ],
+  "crate": "plain",
+  "crate_archive": "https://crates.io/api/v1/crates/plain/0.2.3/download",
+  "files_copied_from_crate": [
+    "LICENSE-APACHE",
+    "LICENSE-MIT"
+  ],
+  "license_expression": "MIT/Apache-2.0",
+  "repository": "https://github.com/randomites/plain",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "version": "0.2.3"
+}

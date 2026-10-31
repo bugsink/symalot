@@ -1,0 +1,21 @@
+{
+  "authors": [
+    "The Rand Project Developers"
+  ],
+  "crate": "getrandom",
+  "crate_archive": "https://crates.io/api/v1/crates/getrandom/0.4.3/download",
+  "files_copied_from_crate": [
+    "LICENSE-APACHE",
+    "LICENSE-MIT"
+  ],
+  "license_expression": "MIT OR Apache-2.0",
+  "repository": "https://github.com/rust-random/getrandom",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "5e7cd5733536844a9856dc7259bd4696bbe5e3ae"
+    },
+    "path_in_vcs": ""
+  },
+  "version": "0.4.3"
+}

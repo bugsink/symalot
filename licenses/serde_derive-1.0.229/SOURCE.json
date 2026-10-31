@@ -1,0 +1,22 @@
+{
+  "authors": [
+    "Erick Tryzelaar <erick.tryzelaar@gmail.com>",
+    "David Tolnay <dtolnay@gmail.com>"
+  ],
+  "crate": "serde_derive",
+  "crate_archive": "https://crates.io/api/v1/crates/serde_derive/1.0.229/download",
+  "files_copied_from_crate": [
+    "LICENSE-APACHE",
+    "LICENSE-MIT"
+  ],
+  "license_expression": "MIT OR Apache-2.0",
+  "repository": "https://github.com/serde-rs/serde",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "7fc3b4c30c94f73a96ebd1553f2b090d928fc3a8"
+    },
+    "path_in_vcs": "serde_derive"
+  },
+  "version": "1.0.229"
+}

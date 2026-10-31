@@ -1,0 +1,21 @@
+{
+  "authors": [
+    "The wasm-bindgen Developers"
+  ],
+  "crate": "wasm-bindgen-macro",
+  "crate_archive": "https://crates.io/api/v1/crates/wasm-bindgen-macro/0.2.130/download",
+  "files_copied_from_crate": [
+    "LICENSE-APACHE",
+    "LICENSE-MIT"
+  ],
+  "license_expression": "MIT OR Apache-2.0",
+  "repository": "https://github.com/wasm-bindgen/wasm-bindgen/tree/master/crates/macro",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "c93b8ae848d4d9e6beaeaf9516e18a7cadd818a2"
+    },
+    "path_in_vcs": "crates/macro"
+  },
+  "version": "0.2.130"
+}

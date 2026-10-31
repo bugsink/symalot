@@ -1,0 +1,21 @@
+{
+  "authors": [
+    "Robert Grosse <n210241048576@gmail.com>"
+  ],
+  "crate": "stable_deref_trait",
+  "crate_archive": "https://crates.io/api/v1/crates/stable_deref_trait/1.2.1/download",
+  "files_copied_from_crate": [
+    "LICENSE-APACHE",
+    "LICENSE-MIT"
+  ],
+  "license_expression": "MIT OR Apache-2.0",
+  "repository": "https://github.com/storyyeller/stable_deref_trait",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "30002b4228f7cdee309217b6bf6eee099dda0b00"
+    },
+    "path_in_vcs": ""
+  },
+  "version": "1.2.1"
+}

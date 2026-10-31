@@ -1,0 +1,23 @@
+{
+  "authors": [
+    "Ashley Mannix<ashleymannix@live.com.au>",
+    "Dylan DPC<dylan.dpc@gmail.com>",
+    "Hunar Roop Kahlon<hunar.roop@gmail.com>"
+  ],
+  "crate": "uuid",
+  "crate_archive": "https://crates.io/api/v1/crates/uuid/1.29.0/download",
+  "files_copied_from_crate": [
+    "LICENSE-APACHE",
+    "LICENSE-MIT"
+  ],
+  "license_expression": "Apache-2.0 OR MIT",
+  "repository": "https://github.com/uuid-rs/uuid",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "4643e607d0ded1f2f95c1c427456e17bd5edf708"
+    },
+    "path_in_vcs": ""
+  },
+  "version": "1.29.0"
+}

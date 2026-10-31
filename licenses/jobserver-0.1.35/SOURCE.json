@@ -1,0 +1,21 @@
+{
+  "authors": [
+    "Alex Crichton <alex@alexcrichton.com>"
+  ],
+  "crate": "jobserver",
+  "crate_archive": "https://crates.io/api/v1/crates/jobserver/0.1.35/download",
+  "files_copied_from_crate": [
+    "LICENSE-APACHE",
+    "LICENSE-MIT"
+  ],
+  "license_expression": "MIT OR Apache-2.0",
+  "repository": "https://github.com/rust-lang/jobserver-rs",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "85ba04e3cf89e5c10e7b82de69f6be6dff9d3ec3"
+    },
+    "path_in_vcs": ""
+  },
+  "version": "0.1.35"
+}

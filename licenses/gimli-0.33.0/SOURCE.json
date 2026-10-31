@@ -1,0 +1,19 @@
+{
+  "authors": [],
+  "crate": "gimli",
+  "crate_archive": "https://crates.io/api/v1/crates/gimli/0.33.0/download",
+  "files_copied_from_crate": [
+    "LICENSE-APACHE",
+    "LICENSE-MIT"
+  ],
+  "license_expression": "MIT OR Apache-2.0",
+  "repository": "https://github.com/gimli-rs/gimli",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "033ef8dd5748236aa5bcecc868207a40e4e3f597"
+    },
+    "path_in_vcs": ""
+  },
+  "version": "0.33.0"
+}

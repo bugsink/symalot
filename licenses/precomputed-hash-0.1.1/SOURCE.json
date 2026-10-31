@@ -1,0 +1,14 @@
+{
+  "authors": [
+    "Emilio Cobos \u00c1lvarez <emilio@crisal.io>"
+  ],
+  "crate": "precomputed-hash",
+  "crate_archive": "https://crates.io/api/v1/crates/precomputed-hash/0.1.1/download",
+  "files_copied_from_crate": [
+    "LICENSE"
+  ],
+  "license_expression": "MIT",
+  "repository": "https://github.com/emilio/precomputed-hash",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "version": "0.1.1"
+}

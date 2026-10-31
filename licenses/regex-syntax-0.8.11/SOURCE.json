@@ -1,0 +1,23 @@
+{
+  "authors": [
+    "The Rust Project Developers",
+    "Andrew Gallant <jamslam@gmail.com>"
+  ],
+  "crate": "regex-syntax",
+  "crate_archive": "https://crates.io/api/v1/crates/regex-syntax/0.8.11/download",
+  "files_copied_from_crate": [
+    "LICENSE-APACHE",
+    "LICENSE-MIT",
+    "src/unicode_tables/LICENSE-UNICODE"
+  ],
+  "license_expression": "MIT OR Apache-2.0",
+  "repository": "https://github.com/rust-lang/regex",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "140167995737fa11dfe11b8af8b9aa143b790b4e"
+    },
+    "path_in_vcs": "regex-syntax"
+  },
+  "version": "0.8.11"
+}

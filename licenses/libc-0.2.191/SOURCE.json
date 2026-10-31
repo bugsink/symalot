@@ -1,0 +1,19 @@
+{
+  "authors": [],
+  "crate": "libc",
+  "crate_archive": "https://crates.io/api/v1/crates/libc/0.2.191/download",
+  "files_copied_from_crate": [
+    "LICENSE-APACHE",
+    "LICENSE-MIT"
+  ],
+  "license_expression": "MIT OR Apache-2.0",
+  "repository": "https://github.com/rust-lang/libc",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "ccc2ff4aaab962f7fde7b8edda7379c045b1ca12"
+    },
+    "path_in_vcs": ""
+  },
+  "version": "0.2.191"
+}

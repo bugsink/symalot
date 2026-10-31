@@ -1,0 +1,14 @@
+{
+  "authors": [
+    "Sebastian Zivota <sebastian.zivota@sentry.io>",
+    "Arpad Borsos <arpad.borsos@sentry.io>"
+  ],
+  "crate": "symbolic-ppdb",
+  "crate_archive": "https://crates.io/api/v1/crates/symbolic-ppdb/13.9.0/download",
+  "files_copied_from_crate": [],
+  "license_expression": "MIT",
+  "license_from_upstream_release": "https://raw.githubusercontent.com/getsentry/symbolic/13.9.0/LICENSE",
+  "repository": "https://github.com/getsentry/symbolic",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "version": "13.9.0"
+}

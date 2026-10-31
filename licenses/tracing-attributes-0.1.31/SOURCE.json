@@ -1,0 +1,22 @@
+{
+  "authors": [
+    "Tokio Contributors <team@tokio.rs>",
+    "Eliza Weisman <eliza@buoyant.io>",
+    "David Barsky <dbarsky@amazon.com>"
+  ],
+  "crate": "tracing-attributes",
+  "crate_archive": "https://crates.io/api/v1/crates/tracing-attributes/0.1.31/download",
+  "files_copied_from_crate": [
+    "LICENSE"
+  ],
+  "license_expression": "MIT",
+  "repository": "https://github.com/tokio-rs/tracing",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "55086231ec4aaeffcaab9932e696f40278f06bd1"
+    },
+    "path_in_vcs": "tracing-attributes"
+  },
+  "version": "0.1.31"
+}

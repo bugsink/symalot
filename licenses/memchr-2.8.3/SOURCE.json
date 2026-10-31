@@ -1,0 +1,22 @@
+{
+  "authors": [
+    "Andrew Gallant <jamslam@gmail.com>",
+    "bluss"
+  ],
+  "crate": "memchr",
+  "crate_archive": "https://crates.io/api/v1/crates/memchr/2.8.3/download",
+  "files_copied_from_crate": [
+    "COPYING",
+    "LICENSE-MIT"
+  ],
+  "license_expression": "Unlicense OR MIT",
+  "repository": "https://github.com/BurntSushi/memchr",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "5fdb40c054e1fff359a2f7bdf7f87a13b34b465d"
+    },
+    "path_in_vcs": ""
+  },
+  "version": "2.8.3"
+}

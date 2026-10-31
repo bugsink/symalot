@@ -1,0 +1,14 @@
+{
+  "authors": [
+    "Sentry <hello@sentry.io>"
+  ],
+  "crate": "watto",
+  "crate_archive": "https://crates.io/api/v1/crates/watto/0.2.0/download",
+  "files_copied_from_crate": [
+    "LICENSE"
+  ],
+  "license_expression": "Apache-2.0",
+  "repository": "https://github.com/getsentry/watto",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "version": "0.2.0"
+}

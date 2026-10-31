@@ -1,0 +1,21 @@
+{
+  "authors": [
+    "Manish Goregaokar <manishsmail@gmail.com>"
+  ],
+  "crate": "elsa",
+  "crate_archive": "https://crates.io/api/v1/crates/elsa/1.11.2/download",
+  "files_copied_from_crate": [
+    "LICENSE-APACHE",
+    "LICENSE-MIT"
+  ],
+  "license_expression": "MIT/Apache-2.0",
+  "repository": "https://github.com/manishearth/elsa",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "00efa68a37b1995e777189feb5dd2f62e2581550"
+    },
+    "path_in_vcs": ""
+  },
+  "version": "1.11.2"
+}

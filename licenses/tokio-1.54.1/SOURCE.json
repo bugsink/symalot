@@ -1,0 +1,20 @@
+{
+  "authors": [
+    "Tokio Contributors <team@tokio.rs>"
+  ],
+  "crate": "tokio",
+  "crate_archive": "https://crates.io/api/v1/crates/tokio/1.54.1/download",
+  "files_copied_from_crate": [
+    "LICENSE"
+  ],
+  "license_expression": "MIT",
+  "repository": "https://github.com/tokio-rs/tokio",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "b53b2001ed2ccfd9b87e32a0c6da1a1eebdc80b8"
+    },
+    "path_in_vcs": "tokio"
+  },
+  "version": "1.54.1"
+}

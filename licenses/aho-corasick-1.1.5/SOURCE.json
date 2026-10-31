@@ -1,0 +1,21 @@
+{
+  "authors": [
+    "Andrew Gallant <jamslam@gmail.com>"
+  ],
+  "crate": "aho-corasick",
+  "crate_archive": "https://crates.io/api/v1/crates/aho-corasick/1.1.5/download",
+  "files_copied_from_crate": [
+    "COPYING",
+    "LICENSE-MIT"
+  ],
+  "license_expression": "Unlicense OR MIT",
+  "repository": "https://github.com/BurntSushi/aho-corasick",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "5178060ce73d91938f8582d0360e3be031380440"
+    },
+    "path_in_vcs": ""
+  },
+  "version": "1.1.5"
+}

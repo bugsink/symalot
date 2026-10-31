@@ -1,0 +1,20 @@
+{
+  "authors": [
+    "Armin Ronacher <armin.ronacher@active-4.com>"
+  ],
+  "crate": "elementtree",
+  "crate_archive": "https://crates.io/api/v1/crates/elementtree/1.2.3/download",
+  "files_copied_from_crate": [
+    "LICENSE"
+  ],
+  "license_expression": "MIT",
+  "repository": "https://github.com/mitsuhiko/elementtree-rust",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "14f210bdc4ba1c26af792e34845a4a1b44b66971"
+    },
+    "path_in_vcs": ""
+  },
+  "version": "1.2.3"
+}

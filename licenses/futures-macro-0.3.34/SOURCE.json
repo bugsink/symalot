@@ -1,0 +1,19 @@
+{
+  "authors": [],
+  "crate": "futures-macro",
+  "crate_archive": "https://crates.io/api/v1/crates/futures-macro/0.3.34/download",
+  "files_copied_from_crate": [
+    "LICENSE-APACHE",
+    "LICENSE-MIT"
+  ],
+  "license_expression": "MIT OR Apache-2.0",
+  "repository": "https://github.com/rust-lang/futures-rs",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "705e6b5c0f06535b1aac1cb1989a172b3d45be8c"
+    },
+    "path_in_vcs": "futures-macro"
+  },
+  "version": "0.3.34"
+}

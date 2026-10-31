@@ -1,0 +1,21 @@
+{
+  "authors": [
+    "The Rust Project Developers"
+  ],
+  "crate": "num-traits",
+  "crate_archive": "https://crates.io/api/v1/crates/num-traits/0.2.19/download",
+  "files_copied_from_crate": [
+    "LICENSE-APACHE",
+    "LICENSE-MIT"
+  ],
+  "license_expression": "MIT OR Apache-2.0",
+  "repository": "https://github.com/rust-num/num-traits",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "7ec3d41d39b28190ec1d42db38021107b3951f3a"
+    },
+    "path_in_vcs": ""
+  },
+  "version": "0.2.19"
+}

@@ -1,0 +1,21 @@
+{
+  "authors": [
+    "Chip Senkbeil <chip@senkbeil.org>"
+  ],
+  "crate": "typed-path",
+  "crate_archive": "https://crates.io/api/v1/crates/typed-path/0.12.4/download",
+  "files_copied_from_crate": [
+    "LICENSE-APACHE",
+    "LICENSE-MIT"
+  ],
+  "license_expression": "MIT OR Apache-2.0",
+  "repository": "https://github.com/chipsenkbeil/typed-path",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "2b35969073aba78506455e3add808b1514a0f368"
+    },
+    "path_in_vcs": ""
+  },
+  "version": "0.12.4"
+}

@@ -1,0 +1,20 @@
+{
+  "authors": [
+    "Thom Chiovoloni <chiovolonit@gmail.com>"
+  ],
+  "crate": "core_detect",
+  "crate_archive": "https://crates.io/api/v1/crates/core_detect/1.0.0/download",
+  "files_copied_from_crate": [
+    "LICENSE-APACHE",
+    "LICENSE-MIT"
+  ],
+  "license_expression": "MIT/Apache-2.0",
+  "repository": "https://github.com/thomcc/core_detect",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "a0f957776563806e7d20978471676e0db72892ba"
+    }
+  },
+  "version": "1.0.0"
+}

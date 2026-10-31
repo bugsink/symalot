@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "Geoffroy Couprie <geo.couprie@gmail.com>"
+  ],
+  "crate": "circular",
+  "crate_archive": "https://crates.io/api/v1/crates/circular/0.3.0/download",
+  "files_copied_from_crate": [
+    "LICENSE"
+  ],
+  "license_expression": "MIT",
+  "repository": "https://github.com/sozu-proxy/circular",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "8d9566dbb801524b19d82024498f531164e9591f"
+    }
+  },
+  "version": "0.3.0"
+}

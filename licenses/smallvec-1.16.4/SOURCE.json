@@ -1,0 +1,21 @@
+{
+  "authors": [
+    "The Servo Project Developers"
+  ],
+  "crate": "smallvec",
+  "crate_archive": "https://crates.io/api/v1/crates/smallvec/1.16.4/download",
+  "files_copied_from_crate": [
+    "LICENSE-APACHE",
+    "LICENSE-MIT"
+  ],
+  "license_expression": "MIT OR Apache-2.0",
+  "repository": "https://github.com/servo/rust-smallvec",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "eab77462eda2767d2386f1d251928f474827e1c7"
+    },
+    "path_in_vcs": ""
+  },
+  "version": "1.16.4"
+}

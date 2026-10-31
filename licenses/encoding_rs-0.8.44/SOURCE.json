@@ -1,0 +1,23 @@
+{
+  "authors": [
+    "Henri Sivonen <hsivonen@hsivonen.fi>"
+  ],
+  "crate": "encoding_rs",
+  "crate_archive": "https://crates.io/api/v1/crates/encoding_rs/0.8.44/download",
+  "files_copied_from_crate": [
+    "COPYRIGHT",
+    "LICENSE-APACHE",
+    "LICENSE-MIT",
+    "LICENSE-WHATWG"
+  ],
+  "license_expression": "(Apache-2.0 OR MIT) AND BSD-3-Clause",
+  "repository": "https://github.com/hsivonen/encoding_rs",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "8e8556af3cf976392b993a9dbe07456a5ef58469"
+    },
+    "path_in_vcs": ""
+  },
+  "version": "0.8.44"
+}

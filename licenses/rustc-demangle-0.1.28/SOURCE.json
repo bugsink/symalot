@@ -1,0 +1,21 @@
+{
+  "authors": [
+    "Alex Crichton <alex@alexcrichton.com>"
+  ],
+  "crate": "rustc-demangle",
+  "crate_archive": "https://crates.io/api/v1/crates/rustc-demangle/0.1.28/download",
+  "files_copied_from_crate": [
+    "LICENSE-APACHE",
+    "LICENSE-MIT"
+  ],
+  "license_expression": "MIT/Apache-2.0",
+  "repository": "https://github.com/rust-lang/rustc-demangle",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "1fd8a3e2a25e6cb5a75cf7806dc0c421cfd94465"
+    },
+    "path_in_vcs": ""
+  },
+  "version": "0.1.28"
+}

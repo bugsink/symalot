@@ -1,0 +1,19 @@
+{
+  "authors": [],
+  "crate": "cc",
+  "crate_archive": "https://crates.io/api/v1/crates/cc/1.10.0/download",
+  "files_copied_from_crate": [
+    "LICENSE-APACHE",
+    "LICENSE-MIT"
+  ],
+  "license_expression": "MIT OR Apache-2.0",
+  "repository": "https://github.com/rust-lang/cc-rs",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "8d06fcb73f6938c35c9bc59edbdcb9fb56f04d71"
+    },
+    "path_in_vcs": ""
+  },
+  "version": "1.10.0"
+}

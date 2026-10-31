@@ -1,0 +1,22 @@
+{
+  "authors": [
+    "Andrew Chin <achin@eminence32.net>"
+  ],
+  "crate": "procfs-core",
+  "crate_archive": "https://crates.io/api/v1/crates/procfs-core/0.18.0/download",
+  "files_copied_from_crate": [
+    "COPYRIGHT.txt",
+    "LICENSE-APACHE",
+    "LICENSE-MIT"
+  ],
+  "license_expression": "MIT OR Apache-2.0",
+  "repository": "https://github.com/eminence/procfs",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "7d3a0cd0f5b5a8147608fba577b2da26c09dd326"
+    },
+    "path_in_vcs": "procfs-core"
+  },
+  "version": "0.18.0"
+}

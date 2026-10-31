@@ -1,0 +1,21 @@
+{
+  "authors": [
+    "bluss"
+  ],
+  "crate": "scopeguard",
+  "crate_archive": "https://crates.io/api/v1/crates/scopeguard/1.2.0/download",
+  "files_copied_from_crate": [
+    "LICENSE-APACHE",
+    "LICENSE-MIT"
+  ],
+  "license_expression": "MIT OR Apache-2.0",
+  "repository": "https://github.com/bluss/scopeguard",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "bb988222848d39b0b9037b29da3a3a1eb05ebf4b"
+    },
+    "path_in_vcs": ""
+  },
+  "version": "1.2.0"
+}

@@ -1,0 +1,23 @@
+{
+  "authors": [
+    "Nick Fitzgerald <fitzgen@gmail.com>",
+    "Jim Blandy <jimb@red-bean.com>",
+    "Kyle Huey <khuey@kylehuey.com>"
+  ],
+  "crate": "cpp_demangle",
+  "crate_archive": "https://crates.io/api/v1/crates/cpp_demangle/0.4.5/download",
+  "files_copied_from_crate": [
+    "LICENSE-APACHE",
+    "LICENSE-MIT"
+  ],
+  "license_expression": "MIT OR Apache-2.0",
+  "repository": "https://github.com/gimli-rs/cpp_demangle",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "1e679dd1979e1d323de26f81535dd9566263174c"
+    },
+    "path_in_vcs": ""
+  },
+  "version": "0.4.5"
+}

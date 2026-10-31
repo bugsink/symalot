@@ -1,0 +1,20 @@
+{
+  "authors": [
+    "Orson Peters <orsonpeters@gmail.com>"
+  ],
+  "crate": "foldhash",
+  "crate_archive": "https://crates.io/api/v1/crates/foldhash/0.1.5/download",
+  "files_copied_from_crate": [
+    "LICENSE"
+  ],
+  "license_expression": "Zlib",
+  "repository": "https://github.com/orlp/foldhash",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "42461756c3760f9165c90d9626a49e36980a1e47"
+    },
+    "path_in_vcs": ""
+  },
+  "version": "0.1.5"
+}

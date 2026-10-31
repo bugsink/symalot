@@ -1,0 +1,22 @@
+{
+  "authors": [
+    "Jacob Pratt <open-source@jhpratt.dev>",
+    "Time contributors"
+  ],
+  "crate": "time-core",
+  "crate_archive": "https://crates.io/api/v1/crates/time-core/0.1.9/download",
+  "files_copied_from_crate": [
+    "LICENSE-Apache",
+    "LICENSE-MIT"
+  ],
+  "license_expression": "MIT OR Apache-2.0",
+  "repository": "https://github.com/time-rs/time",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "5d8737c39b9170c36c99cfc1f9f49cf0c059c63a"
+    },
+    "path_in_vcs": "time-core"
+  },
+  "version": "0.1.9"
+}

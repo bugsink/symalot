@@ -1,0 +1,20 @@
+{
+  "authors": [
+    "Yury Delendik <ydelendik@mozilla.com>"
+  ],
+  "crate": "wasmparser",
+  "crate_archive": "https://crates.io/api/v1/crates/wasmparser/0.243.0/download",
+  "files_copied_from_crate": [],
+  "license_expression": "Apache-2.0 WITH LLVM-exception OR Apache-2.0 OR MIT",
+  "license_text_from": "pyo3/LICENSE-APACHE (standard Apache-2.0 text)",
+  "repository": "https://github.com/bytecodealliance/wasm-tools/tree/main/crates/wasmparser",
+  "selected_license": "Apache-2.0",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "d05406062d031ae96146486f58a965d87eefea5e"
+    },
+    "path_in_vcs": "crates/wasmparser"
+  },
+  "version": "0.243.0"
+}

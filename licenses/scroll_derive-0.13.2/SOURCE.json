@@ -1,0 +1,22 @@
+{
+  "authors": [
+    "m4b <m4b.github.io@gmail.com>",
+    "Ted Mielczarek <ted@mielczarek.org>",
+    "Systemcluster <me@systemcluster.me>"
+  ],
+  "crate": "scroll_derive",
+  "crate_archive": "https://crates.io/api/v1/crates/scroll_derive/0.13.2/download",
+  "files_copied_from_crate": [
+    "LICENSE"
+  ],
+  "license_expression": "MIT",
+  "repository": "https://github.com/m4b/scroll",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "0df8bd0dc007461fad128b1a2a05ed7daefbe85d"
+    },
+    "path_in_vcs": "scroll_derive"
+  },
+  "version": "0.13.2"
+}

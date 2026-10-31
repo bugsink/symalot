@@ -1,0 +1,21 @@
+{
+  "authors": [
+    "Markus Stange <mstange.moz@gmail.com>"
+  ],
+  "crate": "srcsrv",
+  "crate_archive": "https://crates.io/api/v1/crates/srcsrv/0.2.3/download",
+  "files_copied_from_crate": [
+    "LICENSE-APACHE",
+    "LICENSE-MIT"
+  ],
+  "license_expression": "MIT/Apache-2.0",
+  "repository": "https://github.com/mstange/srcsrv",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "6c74dd9b106dc93c0f3131a86dab48392547a3f9"
+    },
+    "path_in_vcs": ""
+  },
+  "version": "0.2.3"
+}

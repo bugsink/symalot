@@ -1,0 +1,21 @@
+{
+  "authors": [
+    "Jacob Pratt <jacob@jhpratt.dev>"
+  ],
+  "crate": "num-conv",
+  "crate_archive": "https://crates.io/api/v1/crates/num-conv/0.2.2/download",
+  "files_copied_from_crate": [
+    "LICENSE-Apache",
+    "LICENSE-MIT"
+  ],
+  "license_expression": "MIT OR Apache-2.0",
+  "repository": "https://github.com/jhpratt/num-conv",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "b022fe87ac3ad5b0d7606ea7465549eaa92efe97"
+    },
+    "path_in_vcs": ""
+  },
+  "version": "0.2.2"
+}

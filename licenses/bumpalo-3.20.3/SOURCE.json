@@ -1,0 +1,21 @@
+{
+  "authors": [
+    "Nick Fitzgerald <fitzgen@gmail.com>"
+  ],
+  "crate": "bumpalo",
+  "crate_archive": "https://crates.io/api/v1/crates/bumpalo/3.20.3/download",
+  "files_copied_from_crate": [
+    "LICENSE-APACHE",
+    "LICENSE-MIT"
+  ],
+  "license_expression": "MIT OR Apache-2.0",
+  "repository": "https://github.com/fitzgen/bumpalo",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "84654ace6be4444da3ff102a0a0af3b38c4df4fb"
+    },
+    "path_in_vcs": ""
+  },
+  "version": "3.20.3"
+}

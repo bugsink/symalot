@@ -1,0 +1,19 @@
+{
+  "authors": [],
+  "crate": "equivalent",
+  "crate_archive": "https://crates.io/api/v1/crates/equivalent/1.0.3/download",
+  "files_copied_from_crate": [
+    "LICENSE-APACHE",
+    "LICENSE-MIT"
+  ],
+  "license_expression": "Apache-2.0 OR MIT",
+  "repository": "https://github.com/indexmap-rs/equivalent",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "4ee88130bd4ab3229e785533da2af641be22deac"
+    },
+    "path_in_vcs": ""
+  },
+  "version": "1.0.3"
+}

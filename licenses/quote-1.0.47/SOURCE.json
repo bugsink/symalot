@@ -1,0 +1,21 @@
+{
+  "authors": [
+    "David Tolnay <dtolnay@gmail.com>"
+  ],
+  "crate": "quote",
+  "crate_archive": "https://crates.io/api/v1/crates/quote/1.0.47/download",
+  "files_copied_from_crate": [
+    "LICENSE-APACHE",
+    "LICENSE-MIT"
+  ],
+  "license_expression": "MIT OR Apache-2.0",
+  "repository": "https://github.com/dtolnay/quote",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "723dcb47d3f0ddc896e17287c8a8d3f2ea2317d5"
+    },
+    "path_in_vcs": ""
+  },
+  "version": "1.0.47"
+}

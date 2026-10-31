@@ -1,0 +1,19 @@
+{
+  "authors": [],
+  "crate": "find-msvc-tools",
+  "crate_archive": "https://crates.io/api/v1/crates/find-msvc-tools/0.1.15/download",
+  "files_copied_from_crate": [
+    "LICENSE-APACHE",
+    "LICENSE-MIT"
+  ],
+  "license_expression": "MIT OR Apache-2.0",
+  "repository": "https://github.com/rust-lang/cc-rs",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "ffbb10da608f715ed69a4561c4cbdca7c6fbbba6"
+    },
+    "path_in_vcs": "find-msvc-tools"
+  },
+  "version": "0.1.15"
+}

@@ -1,0 +1,19 @@
+{
+  "authors": [],
+  "crate": "windows-link",
+  "crate_archive": "https://crates.io/api/v1/crates/windows-link/0.2.1/download",
+  "files_copied_from_crate": [
+    "license-apache-2.0",
+    "license-mit"
+  ],
+  "license_expression": "MIT OR Apache-2.0",
+  "repository": "https://github.com/microsoft/windows-rs",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "d468916ac27a36fb8a12bafc1bf5c0ec2fe92238"
+    },
+    "path_in_vcs": "crates/libs/link"
+  },
+  "version": "0.2.1"
+}

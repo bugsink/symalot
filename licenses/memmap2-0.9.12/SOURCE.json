@@ -1,0 +1,23 @@
+{
+  "authors": [
+    "Dan Burkert <dan@danburkert.com>",
+    "Yevhenii Reizner <razrfalcon@gmail.com>",
+    "The Contributors"
+  ],
+  "crate": "memmap2",
+  "crate_archive": "https://crates.io/api/v1/crates/memmap2/0.9.12/download",
+  "files_copied_from_crate": [
+    "LICENSE-APACHE",
+    "LICENSE-MIT"
+  ],
+  "license_expression": "MIT OR Apache-2.0",
+  "repository": "https://github.com/RazrFalcon/memmap2-rs",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "4692b056b327aa08dace3a7e345a99e4cff77534"
+    },
+    "path_in_vcs": ""
+  },
+  "version": "0.9.12"
+}

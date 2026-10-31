@@ -1,0 +1,22 @@
+{
+  "authors": [
+    "David Tolnay <dtolnay@gmail.com>",
+    "Alex Crichton <alex@alexcrichton.com>"
+  ],
+  "crate": "proc-macro2",
+  "crate_archive": "https://crates.io/api/v1/crates/proc-macro2/1.0.107/download",
+  "files_copied_from_crate": [
+    "LICENSE-APACHE",
+    "LICENSE-MIT"
+  ],
+  "license_expression": "MIT OR Apache-2.0",
+  "repository": "https://github.com/dtolnay/proc-macro2",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "ed8a5497669cd63db33bf24646f261b012bbbc4a"
+    },
+    "path_in_vcs": ""
+  },
+  "version": "1.0.107"
+}

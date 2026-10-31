@@ -1,0 +1,21 @@
+{
+  "authors": [
+    "David Tolnay <dtolnay@gmail.com>"
+  ],
+  "crate": "anyhow",
+  "crate_archive": "https://crates.io/api/v1/crates/anyhow/1.0.104/download",
+  "files_copied_from_crate": [
+    "LICENSE-APACHE",
+    "LICENSE-MIT"
+  ],
+  "license_expression": "MIT OR Apache-2.0",
+  "repository": "https://github.com/dtolnay/anyhow",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "1dbe1862aae650423e3361fbd20b7d17c5109cc3"
+    },
+    "path_in_vcs": ""
+  },
+  "version": "1.0.104"
+}

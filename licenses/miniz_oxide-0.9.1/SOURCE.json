@@ -1,0 +1,25 @@
+{
+  "authors": [
+    "Frommi <daniil.liferenko@gmail.com>",
+    "oyvindln <oyvindln@users.noreply.github.com>",
+    "Rich Geldreich richgel99@gmail.com"
+  ],
+  "crate": "miniz_oxide",
+  "crate_archive": "https://crates.io/api/v1/crates/miniz_oxide/0.9.1/download",
+  "files_copied_from_crate": [
+    "LICENSE",
+    "LICENSE-APACHE.md",
+    "LICENSE-MIT.md",
+    "LICENSE-ZLIB.md"
+  ],
+  "license_expression": "MIT OR Zlib OR Apache-2.0",
+  "repository": "https://github.com/Frommi/miniz_oxide/tree/master/miniz_oxide",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "4e582392df3a739d2b0dfd2c537dc33e8942be38"
+    },
+    "path_in_vcs": "miniz_oxide"
+  },
+  "version": "0.9.1"
+}

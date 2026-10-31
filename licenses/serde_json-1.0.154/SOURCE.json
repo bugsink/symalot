@@ -1,0 +1,19 @@
+{
+  "authors": [],
+  "crate": "serde_json",
+  "crate_archive": "https://crates.io/api/v1/crates/serde_json/1.0.154/download",
+  "files_copied_from_crate": [
+    "LICENSE-APACHE",
+    "LICENSE-MIT"
+  ],
+  "license_expression": "MIT OR Apache-2.0",
+  "repository": "https://github.com/serde-rs/json",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "20572a6d066958542d79cdd6cf1a7cd9f0c8e1f8"
+    },
+    "path_in_vcs": ""
+  },
+  "version": "1.0.154"
+}

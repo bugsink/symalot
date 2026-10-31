@@ -1,0 +1,21 @@
+{
+  "authors": [
+    "Alex Huszagh <ahuszagh@gmail.com>"
+  ],
+  "crate": "minimal-lexical",
+  "crate_archive": "https://crates.io/api/v1/crates/minimal-lexical/0.2.1/download",
+  "files_copied_from_crate": [
+    "LICENSE-APACHE",
+    "LICENSE-MIT",
+    "LICENSE.md"
+  ],
+  "license_expression": "MIT/Apache-2.0",
+  "repository": "https://github.com/Alexhuszagh/minimal-lexical",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "e997c46656ebe83e696b866bd954da1fa3f64eef"
+    }
+  },
+  "version": "0.2.1"
+}

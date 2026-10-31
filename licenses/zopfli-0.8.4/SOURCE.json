@@ -1,0 +1,18 @@
+{
+  "authors": [],
+  "crate": "zopfli",
+  "crate_archive": "https://crates.io/api/v1/crates/zopfli/0.8.4/download",
+  "files_copied_from_crate": [
+    "COPYING"
+  ],
+  "license_expression": "Apache-2.0",
+  "repository": "https://github.com/zopfli-rs/zopfli",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "62df3aebea9f458558984b106f87e980d4077c2f"
+    },
+    "path_in_vcs": ""
+  },
+  "version": "0.8.4"
+}

@@ -1,0 +1,19 @@
+{
+  "authors": [],
+  "crate": "either",
+  "crate_archive": "https://crates.io/api/v1/crates/either/1.19.0/download",
+  "files_copied_from_crate": [
+    "LICENSE-APACHE",
+    "LICENSE-MIT"
+  ],
+  "license_expression": "MIT OR Apache-2.0",
+  "repository": "https://github.com/rayon-rs/either",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "1e4326df5972eb4a0ced66cb3b67fa0c5aca8493"
+    },
+    "path_in_vcs": ""
+  },
+  "version": "1.19.0"
+}

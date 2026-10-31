@@ -1,0 +1,23 @@
+{
+  "authors": [
+    "Philipp korber <philippkorber@gmail.com>",
+    "darkstalker <slayerbeast@gmail.com>",
+    "daboross <daboross@daboross.net>",
+    "Zac Burns (That3Percent) <that3percent@gmail.com>"
+  ],
+  "crate": "maybe-owned",
+  "crate_archive": "https://crates.io/api/v1/crates/maybe-owned/0.3.4/download",
+  "files_copied_from_crate": [
+    "LICENSE-APACHE",
+    "LICENSE-MIT"
+  ],
+  "license_expression": "MIT OR Apache-2.0",
+  "repository": "https://github.com/rustonaut/maybe-owned",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "a00769e3332fb2f93f2b58f0b731fbb6222fa66c"
+    }
+  },
+  "version": "0.3.4"
+}

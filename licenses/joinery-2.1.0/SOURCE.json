@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "Nathan West <Lucretiel@gmail.com>"
+  ],
+  "crate": "joinery",
+  "crate_archive": "https://crates.io/api/v1/crates/joinery/2.1.0/download",
+  "files_copied_from_crate": [
+    "LICENSE"
+  ],
+  "license_expression": "MIT",
+  "repository": "https://github.com/Lucretiel/joinery",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "8cc8c0abb6b60fe7fa2b8ff2dae76b12fa5cb82a"
+    }
+  },
+  "version": "2.1.0"
+}

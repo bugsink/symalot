@@ -1,0 +1,18 @@
+{
+  "authors": [],
+  "crate": "zlib-rs",
+  "crate_archive": "https://crates.io/api/v1/crates/zlib-rs/0.6.8/download",
+  "files_copied_from_crate": [
+    "LICENSE"
+  ],
+  "license_expression": "Zlib",
+  "repository": "https://github.com/trifectatechfoundation/zlib-rs",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "0254e07204884bfc902d6ebb68c8b703d0ea49cf"
+    },
+    "path_in_vcs": "zlib-rs"
+  },
+  "version": "0.6.8"
+}

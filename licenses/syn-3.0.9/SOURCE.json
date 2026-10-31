@@ -1,0 +1,21 @@
+{
+  "authors": [
+    "David Tolnay <dtolnay@gmail.com>"
+  ],
+  "crate": "syn",
+  "crate_archive": "https://crates.io/api/v1/crates/syn/3.0.9/download",
+  "files_copied_from_crate": [
+    "LICENSE-APACHE",
+    "LICENSE-MIT"
+  ],
+  "license_expression": "MIT OR Apache-2.0",
+  "repository": "https://github.com/dtolnay/syn",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "7c44a5565b4421035101cc16184e9af08ab5fc77"
+    },
+    "path_in_vcs": ""
+  },
+  "version": "3.0.9"
+}

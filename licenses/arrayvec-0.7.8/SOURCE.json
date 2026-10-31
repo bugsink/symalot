@@ -1,0 +1,21 @@
+{
+  "authors": [
+    "bluss"
+  ],
+  "crate": "arrayvec",
+  "crate_archive": "https://crates.io/api/v1/crates/arrayvec/0.7.8/download",
+  "files_copied_from_crate": [
+    "LICENSE-APACHE",
+    "LICENSE-MIT"
+  ],
+  "license_expression": "MIT OR Apache-2.0",
+  "repository": "https://github.com/bluss/arrayvec",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "0cb664cf505844348538230479b0040b44f3faf1"
+    },
+    "path_in_vcs": ""
+  },
+  "version": "0.7.8"
+}

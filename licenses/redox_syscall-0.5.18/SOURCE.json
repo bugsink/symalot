@@ -1,0 +1,20 @@
+{
+  "authors": [
+    "Jeremy Soller <jackpot51@gmail.com>"
+  ],
+  "crate": "redox_syscall",
+  "crate_archive": "https://crates.io/api/v1/crates/redox_syscall/0.5.18/download",
+  "files_copied_from_crate": [
+    "LICENSE"
+  ],
+  "license_expression": "MIT",
+  "repository": "https://gitlab.redox-os.org/redox-os/syscall",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "15aa8e32ef0f3328dd9d48cc8ca02e148a362069"
+    },
+    "path_in_vcs": ""
+  },
+  "version": "0.5.18"
+}

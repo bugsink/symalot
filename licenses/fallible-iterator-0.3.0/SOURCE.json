@@ -1,0 +1,21 @@
+{
+  "authors": [
+    "Steven Fackler <sfackler@gmail.com>"
+  ],
+  "crate": "fallible-iterator",
+  "crate_archive": "https://crates.io/api/v1/crates/fallible-iterator/0.3.0/download",
+  "files_copied_from_crate": [
+    "LICENSE-APACHE",
+    "LICENSE-MIT"
+  ],
+  "license_expression": "MIT/Apache-2.0",
+  "repository": "https://github.com/sfackler/rust-fallible-iterator",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "11cfa0558045e52bdb473c9eab6a1eb35a54e302"
+    },
+    "path_in_vcs": ""
+  },
+  "version": "0.3.0"
+}

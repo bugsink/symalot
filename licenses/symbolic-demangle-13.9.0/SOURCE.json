@@ -1,0 +1,18 @@
+{
+  "authors": [
+    "Armin Ronacher <armin.ronacher@active-4.com>",
+    "Jan Michael Auer <mail@jauer.org>"
+  ],
+  "crate": "symbolic-demangle",
+  "crate_archive": "https://crates.io/api/v1/crates/symbolic-demangle/13.9.0/download",
+  "files_copied_from_crate": [
+    "vendor/msvc-demangler/LICENSE.LLVM",
+    "vendor/msvc-demangler/LICENSE.MIT",
+    "vendor/swift/LICENSE.txt",
+    "vendor/swift/LICENSE_LLVM.txt"
+  ],
+  "license_expression": "MIT",
+  "repository": "https://github.com/getsentry/symbolic",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "version": "13.9.0"
+}

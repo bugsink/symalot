@@ -1,0 +1,21 @@
+{
+  "authors": [
+    "The Rust Project Developers"
+  ],
+  "crate": "log",
+  "crate_archive": "https://crates.io/api/v1/crates/log/0.4.35/download",
+  "files_copied_from_crate": [
+    "LICENSE-APACHE",
+    "LICENSE-MIT"
+  ],
+  "license_expression": "MIT OR Apache-2.0",
+  "repository": "https://github.com/rust-lang/log",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "a46450ba763280c29d35b53aa8ad0ff1fc1d78d0"
+    },
+    "path_in_vcs": ""
+  },
+  "version": "0.4.35"
+}

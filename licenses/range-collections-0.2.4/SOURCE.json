@@ -1,0 +1,20 @@
+{
+  "authors": [
+    "R\u00fcdiger Klaehn <rklaehn@protonmail.com>"
+  ],
+  "crate": "range-collections",
+  "crate_archive": "https://crates.io/api/v1/crates/range-collections/0.2.4/download",
+  "files_copied_from_crate": [
+    "LICENSE-APACHE2.md",
+    "LICENSE-MIT.md"
+  ],
+  "license_expression": "MIT OR Apache-2.0",
+  "repository": "https://github.com/rklaehn/range-collections",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "5869e012ba193aa6ef4b5020414e85173c50a5a9"
+    }
+  },
+  "version": "0.2.4"
+}

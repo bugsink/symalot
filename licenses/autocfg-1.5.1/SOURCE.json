@@ -1,0 +1,21 @@
+{
+  "authors": [
+    "Josh Stone <cuviper@gmail.com>"
+  ],
+  "crate": "autocfg",
+  "crate_archive": "https://crates.io/api/v1/crates/autocfg/1.5.1/download",
+  "files_copied_from_crate": [
+    "LICENSE-APACHE",
+    "LICENSE-MIT"
+  ],
+  "license_expression": "Apache-2.0 OR MIT",
+  "repository": "https://github.com/cuviper/autocfg",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "2799b09c24e6632f8e653c5cd8fc303e85a906ba"
+    },
+    "path_in_vcs": ""
+  },
+  "version": "1.5.1"
+}

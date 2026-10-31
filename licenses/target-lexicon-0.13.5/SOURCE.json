@@ -1,0 +1,20 @@
+{
+  "authors": [
+    "Dan Gohman <sunfish@mozilla.com>"
+  ],
+  "crate": "target-lexicon",
+  "crate_archive": "https://crates.io/api/v1/crates/target-lexicon/0.13.5/download",
+  "files_copied_from_crate": [
+    "LICENSE"
+  ],
+  "license_expression": "Apache-2.0 WITH LLVM-exception",
+  "repository": "https://github.com/bytecodealliance/target-lexicon",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "6647bd7d681d3e218c88568d8285dfd8cae2dd97"
+    },
+    "path_in_vcs": ""
+  },
+  "version": "0.13.5"
+}

@@ -1,0 +1,21 @@
+{
+  "authors": [
+    "Jacob Pratt <jacob@jhpratt.dev>"
+  ],
+  "crate": "powerfmt",
+  "crate_archive": "https://crates.io/api/v1/crates/powerfmt/0.2.1/download",
+  "files_copied_from_crate": [
+    "LICENSE-Apache",
+    "LICENSE-MIT"
+  ],
+  "license_expression": "MIT OR Apache-2.0",
+  "repository": "https://github.com/jhpratt/powerfmt",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "3dd45162a7e64d6b354675e4282d0550dce8bfc8"
+    },
+    "path_in_vcs": "powerfmt"
+  },
+  "version": "0.2.1"
+}

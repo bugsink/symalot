@@ -1,0 +1,20 @@
+{
+  "authors": [
+    "Alex Franchuk <alex.franchuk@gmail.com>"
+  ],
+  "crate": "cachemap2",
+  "crate_archive": "https://crates.io/api/v1/crates/cachemap2/0.3.0/download",
+  "files_copied_from_crate": [
+    "LICENSE"
+  ],
+  "license_expression": "MIT",
+  "repository": null,
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "31790fa7ca3a1b1ed8523c5f8ef45fe006dd1d30"
+    },
+    "path_in_vcs": ""
+  },
+  "version": "0.3.0"
+}

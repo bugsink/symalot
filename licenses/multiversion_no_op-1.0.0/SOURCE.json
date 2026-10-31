@@ -1,0 +1,21 @@
+{
+  "authors": [
+    "Henri Sivonen <hsivonen@hsivonen.fi>"
+  ],
+  "crate": "multiversion_no_op",
+  "crate_archive": "https://crates.io/api/v1/crates/multiversion_no_op/1.0.0/download",
+  "files_copied_from_crate": [
+    "COPYRIGHT",
+    "LICENSE-APACHE",
+    "LICENSE-MIT"
+  ],
+  "license_expression": "Apache-2.0 OR MIT",
+  "repository": "https://github.com/hsivonen/multiversion_no_op",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "5463f2d9272305f21eed5111eaf221a195abf2f4"
+    }
+  },
+  "version": "1.0.0"
+}

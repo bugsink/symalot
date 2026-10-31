@@ -1,0 +1,21 @@
+{
+  "authors": [
+    "m4b <m4b.github.io@gmail.com>",
+    "Ted Mielczarek <ted@mielczarek.org>"
+  ],
+  "crate": "scroll",
+  "crate_archive": "https://crates.io/api/v1/crates/scroll/0.11.0/download",
+  "files_copied_from_crate": [
+    "LICENSE"
+  ],
+  "license_expression": "MIT",
+  "repository": "https://github.com/m4b/scroll",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "73c1d6764446626593f19422021445c21183698e"
+    },
+    "path_in_vcs": ""
+  },
+  "version": "0.11.0"
+}

@@ -1,0 +1,14 @@
+{
+  "authors": [
+    "Sentry <hello@sentry.io>"
+  ],
+  "crate": "debugid",
+  "crate_archive": "https://crates.io/api/v1/crates/debugid/0.8.0/download",
+  "files_copied_from_crate": [
+    "LICENSE"
+  ],
+  "license_expression": "Apache-2.0",
+  "repository": "https://github.com/getsentry/rust-debugid",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "version": "0.8.0"
+}

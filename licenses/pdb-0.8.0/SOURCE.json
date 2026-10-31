@@ -1,0 +1,22 @@
+{
+  "authors": [
+    "Jan Michael Auer <mail@jauer.org>",
+    "Will Glynn <will@willglynn.com>"
+  ],
+  "crate": "pdb",
+  "crate_archive": "https://crates.io/api/v1/crates/pdb/0.8.0/download",
+  "files_copied_from_crate": [
+    "LICENSE-APACHE",
+    "LICENSE-MIT"
+  ],
+  "license_expression": "MIT OR Apache-2.0",
+  "repository": "https://github.com/willglynn/pdb",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "b052964e09d03eb190c8a60dc76344150ff8a9df"
+    },
+    "path_in_vcs": ""
+  },
+  "version": "0.8.0"
+}

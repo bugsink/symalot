@@ -1,0 +1,23 @@
+{
+  "authors": [
+    "Mathijs van de Nes <git@mathijs.vd-nes.nl>",
+    "Marli Frost <marli@frost.red>",
+    "Ryan Levick <ryan.levick@gmail.com>",
+    "Chris Hennick <hennickc@amazon.com>"
+  ],
+  "crate": "zip",
+  "crate_archive": "https://crates.io/api/v1/crates/zip/7.4.0/download",
+  "files_copied_from_crate": [
+    "LICENSE"
+  ],
+  "license_expression": "MIT",
+  "repository": "https://github.com/zip-rs/zip2.git",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "016d421c8d55d04b88b9f5e77da29f6a06579ad1"
+    },
+    "path_in_vcs": ""
+  },
+  "version": "7.4.0"
+}

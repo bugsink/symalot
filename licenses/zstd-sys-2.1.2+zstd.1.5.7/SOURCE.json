@@ -1,0 +1,23 @@
+{
+  "authors": [
+    "Alexandre Bury <alexandre.bury@gmail.com>"
+  ],
+  "crate": "zstd-sys",
+  "crate_archive": "https://crates.io/api/v1/crates/zstd-sys/2.1.2+zstd.1.5.7/download",
+  "files_copied_from_crate": [
+    "LICENSE",
+    "LICENSE.BSD-3-Clause",
+    "zstd/COPYING",
+    "zstd/LICENSE"
+  ],
+  "license_expression": "BSD-3-Clause",
+  "repository": "https://github.com/gyscos/zstd-rs",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "75bc74045a2f6ea0439aeed7e159a266da20aac0"
+    },
+    "path_in_vcs": "zstd-safe/zstd-sys"
+  },
+  "version": "2.1.2+zstd.1.5.7"
+}

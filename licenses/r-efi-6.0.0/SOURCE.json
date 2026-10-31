@@ -1,0 +1,20 @@
+{
+  "authors": [],
+  "crate": "r-efi",
+  "crate_archive": "https://crates.io/api/v1/crates/r-efi/6.0.0/download",
+  "files_copied_from_crate": [
+    "AUTHORS"
+  ],
+  "license_expression": "MIT OR Apache-2.0 OR LGPL-2.1-or-later",
+  "license_text_from": "pyo3/LICENSE-APACHE (standard Apache-2.0 text)",
+  "repository": "https://github.com/r-efi/r-efi",
+  "selected_license": "Apache-2.0",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "7e1b0322d31d625f81a5656096330934f9cd835d"
+    },
+    "path_in_vcs": ""
+  },
+  "version": "6.0.0"
+}

@@ -1,0 +1,20 @@
+{
+  "authors": [
+    "Carl Lerche <me@carllerche.com>"
+  ],
+  "crate": "slab",
+  "crate_archive": "https://crates.io/api/v1/crates/slab/0.4.12/download",
+  "files_copied_from_crate": [
+    "LICENSE"
+  ],
+  "license_expression": "MIT",
+  "repository": "https://github.com/tokio-rs/slab",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "a1e4346070a48c936d808de75191dee5d01e433c"
+    },
+    "path_in_vcs": ""
+  },
+  "version": "0.4.12"
+}

@@ -1,0 +1,20 @@
+{
+  "authors": [
+    "David Tolnay <dtolnay@gmail.com>"
+  ],
+  "crate": "zmij",
+  "crate_archive": "https://crates.io/api/v1/crates/zmij/1.0.23/download",
+  "files_copied_from_crate": [
+    "LICENSE-MIT"
+  ],
+  "license_expression": "MIT",
+  "repository": "https://github.com/dtolnay/zmij",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "7b7cc48b58028e8af7be87e94c0c1c8936f1a57c"
+    },
+    "path_in_vcs": ""
+  },
+  "version": "1.0.23"
+}

@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "Nathan West <Lucretiel@gmail.com>"
+  ],
+  "crate": "indent_write",
+  "crate_archive": "https://crates.io/api/v1/crates/indent_write/2.2.0/download",
+  "files_copied_from_crate": [
+    "LICENSE"
+  ],
+  "license_expression": "MPL-2.0",
+  "repository": "https://github.com/Lucretiel/indent-write",
+  "source": "registry+https://github.com/rust-lang/crates.io-index",
+  "vcs": {
+    "git": {
+      "sha1": "a020a90843a2a58dc782a5df9762fcb863db7009"
+    }
+  },
+  "version": "2.2.0"
+}
