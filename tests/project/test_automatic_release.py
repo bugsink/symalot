@@ -38,7 +38,7 @@ def repository(tmp_path):
     git(root, "config", "commit.gpgsign", "false")
     git(root, "config", "tag.gpgsign", "false")
     remote = tmp_path / "remote.git"
-    git(root, "init", "--bare", "--quiet", str(remote))
+    git(root, "init", "--bare", "--quiet", "--initial-branch=main", str(remote))
     git(root, "remote", "add", "origin", str(remote))
     write_versions(root, "0.1.0")
     (root / "Cargo.lock").write_text(
