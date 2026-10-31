@@ -20,6 +20,7 @@ test = ["pytest>=8"]
 
 [tool.maturin]
 module-name = "symalot"
+exclude = ["symalot-logo.png"]
 include = [
     { path = "tests/**/*", format = "sdist" },
     { path = "scripts/**/*", format = "sdist" },
